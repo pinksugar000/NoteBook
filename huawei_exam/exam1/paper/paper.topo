@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="7A5566E8-018E-4dd1-8541-7B65046CF325" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-BC-08-AB" com_port="2001" bootmode="0" cx="573.000000" cy="173.000000" edit_left="600" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="F5D32B70-3A8D-4d8a-9EFE-CFD8DB130A89" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-8E-56-57" com_port="2000" bootmode="0" cx="376.000000" cy="171.000000" edit_left="403" edit_top="225">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F5D32B70-3A8D-4d8a-9EFE-CFD8DB130A89" destDeviceID="7A5566E8-018E-4dd1-8541-7B65046CF325">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="446.181549" srcBoundRect_Y="198.438385" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="556.818481" tarBoundRect_Y="199.561615" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="458.181549" srcBoundRect_Y="186.438385" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="568.818481" tarBoundRect_Y="187.561615" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
+<paper>
+    <PaperID>5DB84AA2-A22B-4c01-8301-C4391A68EBE4</PaperID>
+    <PaperUses>0</PaperUses>
+    <TimeMode>0</TimeMode>
+    <LimitedTimes>0</LimitedTimes>
+    <TimeLeft>0</TimeLeft>
+    <LockPaper>0</LockPaper>
+    <AnswerAfterTimeOut>0</AnswerAfterTimeOut>
+</paper>
