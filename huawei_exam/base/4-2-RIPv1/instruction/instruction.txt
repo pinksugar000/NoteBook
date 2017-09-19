@@ -1,0 +1,4 @@
+操作内容：
+1.按照拓扑，配置好IP
+2。开启RIP，并通告相关网络
+3.debugging的使用，display debugging 可以查看调测信息。要在终端显示，执行terminal debugging

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="C99C3650-E3B8-4600-9880-984DC82CD823" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-12-75-32" com_port="2000" bootmode="0" cx="183.000000" cy="262.000000" edit_left="210" edit_top="316">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="FA58481C-FD8F-4f53-9287-D3FD55087EFF" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-00-0E-0D" com_port="2001" bootmode="0" cx="383.000000" cy="262.000000" edit_left="410" edit_top="316">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="C99C3650-E3B8-4600-9880-984DC82CD823" destDeviceID="FA58481C-FD8F-4f53-9287-D3FD55087EFF">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="253.183762" srcBoundRect_Y="289.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="366.816223" tarBoundRect_Y="289.000000" tarOffset_X="0.000000" tarOffset_Y="-1.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="268" top="297" right="363" bottom="314" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="243" top="177" right="353" bottom="194" content="设备的基本配置" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
+<paper>
+    <PaperID>4396014E-51E1-478a-AE6D-4D29C26A37FD</PaperID>
+    <PaperUses>0</PaperUses>
+    <TimeMode>0</TimeMode>
+    <LimitedTimes>0</LimitedTimes>
+    <TimeLeft>0</TimeLeft>
+    <LockPaper>0</LockPaper>
+    <AnswerAfterTimeOut>0</AnswerAfterTimeOut>
+</paper>
