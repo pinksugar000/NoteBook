@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="25617DA6-F341-4b3a-9F92-E4C8725E2146" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-D5-22-8C" com_port="2000" bootmode="0" cx="273.000000" cy="274.000000" edit_left="300" edit_top="328">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="0B5DB635-B9BB-4250-A3F0-37D7D8958DB6" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-95-25-F1" com_port="2001" bootmode="0" cx="573.000000" cy="273.000000" edit_left="600" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="25617DA6-F341-4b3a-9F92-E4C8725E2146" destDeviceID="0B5DB635-B9BB-4250-A3F0-37D7D8958DB6">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="343.183533" srcBoundRect_Y="300.856049" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="556.816467" tarBoundRect_Y="300.143951" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="403" top="122" right="475" bottom="139" content="FTPµÄÅäÖÃ" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="395" top="265" right="490" bottom="282" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="685" top="133" right="734" bottom="150" content="Î´³É¹¦" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
+<paper>
+    <PaperID>BE663D1C-65EE-4734-9E7D-F90A1111082C</PaperID>
+    <PaperUses>0</PaperUses>
+    <TimeMode>0</TimeMode>
+    <LimitedTimes>0</LimitedTimes>
+    <TimeLeft>0</TimeLeft>
+    <LockPaper>0</LockPaper>
+    <AnswerAfterTimeOut>0</AnswerAfterTimeOut>
+</paper>
