@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.2.00.500">
     <devices>
-        <dev id="D390B397-F20B-4577-B223-6967FE0E606C" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-4B-55-7D" com_port="2001" bootmode="0" cx="574.000000" cy="273.000000" edit_left="601" edit_top="327">
+        <dev id="F744CE1A-D464-4587-ADA6-492A7CA36295" name="FRSW1" poe="0" model="FRSW" settings="0-100-1-300;" system_mac="" com_port="0" bootmode="0" cx="373.000000" cy="273.000000" edit_left="400" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Serial" interfacename="Serial" count="16" />
+            </slot>
+        </dev>
+        <dev id="4C32F8FA-AAE4-46c1-8A16-20643A4EC0D0" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-FA-11-69" com_port="2000" bootmode="0" cx="273.000000" cy="273.000000" edit_left="300" edit_top="327">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -9,7 +14,7 @@
             </slot>
             <slot isMainBoard="0" id="0" type="521" />
         </dev>
-        <dev id="4C32F8FA-AAE4-46c1-8A16-20643A4EC0D0" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-FA-11-69" com_port="2000" bootmode="0" cx="274.000000" cy="273.000000" edit_left="301" edit_top="327">
+        <dev id="D390B397-F20B-4577-B223-6967FE0E606C" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-4B-55-7D" com_port="2001" bootmode="0" cx="573.000000" cy="273.000000" edit_left="600" edit_top="327">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -19,8 +24,11 @@
         </dev>
     </devices>
     <lines>
-        <line srcDeviceID="4C32F8FA-AAE4-46c1-8A16-20643A4EC0D0" destDeviceID="D390B397-F20B-4577-B223-6967FE0E606C">
-            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="344.183777" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="557.816223" tarBoundRect_Y="300.000000" tarOffset_X="-46.000000" tarOffset_Y="5.000000" />
+        <line srcDeviceID="4C32F8FA-AAE4-46c1-8A16-20643A4EC0D0" destDeviceID="F744CE1A-D464-4587-ADA6-492A7CA36295">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="343.183777" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="356.816223" tarBoundRect_Y="300.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="D390B397-F20B-4577-B223-6967FE0E606C" destDeviceID="F744CE1A-D464-4587-ADA6-492A7CA36295">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="556.816223" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="443.183777" tarBoundRect_Y="300.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
     </lines>
     <shapes />
