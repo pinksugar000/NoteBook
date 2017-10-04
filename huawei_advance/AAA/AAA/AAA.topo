@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="DF43314D-E927-474e-B570-7BA0CF8CAC0C" name="AR1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-B3-68-03" com_port="2000" bootmode="0" cx="474.000000" cy="273.000000" edit_left="501" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="87C5DFE4-63B3-4e79-BEFC-F32F137CE031" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-14-42-46" com_port="2001" bootmode="0" cx="472.000000" cy="463.000000" edit_left="499" edit_top="517">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F55E0982-37F6-404e-AF91-F07E7E6F202C" name="PC1" poe="0" model="PC" settings=" -simpc_ip 10.1.1.2  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-01-42-11  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-01-42-11" com_port="0" bootmode="0" cx="274.000000" cy="273.000000" edit_left="301" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F55E0982-37F6-404e-AF91-F07E7E6F202C" destDeviceID="DF43314D-E927-474e-B570-7BA0CF8CAC0C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="344.183777" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="457.816223" tarBoundRect_Y="300.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="87C5DFE4-63B3-4e79-BEFC-F32F137CE031" destDeviceID="DF43314D-E927-474e-B570-7BA0CF8CAC0C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="499.454529" srcBoundRect_Y="446.818634" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="500.545471" tarBoundRect_Y="343.181366" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="389" top="212" right="416" bottom="229" content="AAA" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="433" top="351" right="520" bottom="368" content="10.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

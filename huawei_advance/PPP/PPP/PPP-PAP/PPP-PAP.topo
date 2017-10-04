@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="160693AE-6257-4a90-8FD7-0ED7F5756511" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-50-64-4C" com_port="2001" bootmode="0" cx="561.000000" cy="277.000000" edit_left="588" edit_top="331">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="1D01CDC7-D844-449b-86DA-CAC0F2353417" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AD-1C-62" com_port="2000" bootmode="0" cx="278.000000" cy="278.000000" edit_left="305" edit_top="332">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="1D01CDC7-D844-449b-86DA-CAC0F2353417" destDeviceID="160693AE-6257-4a90-8FD7-0ED7F5756511">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="348.183502" srcBoundRect_Y="304.847412" srcOffset_X="-13.000000" srcOffset_Y="10.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="544.816528" tarBoundRect_Y="304.152588" tarOffset_X="-17.000000" tarOffset_Y="7.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="400" top="220" right="502" bottom="237" content="PPPÐ­ÒéµÄÍØÆË" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="399" top="332" right="494" bottom="349" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
