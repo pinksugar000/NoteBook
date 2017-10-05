@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.2.00.500">
     <devices>
-        <dev id="557B9F5F-3F84-4671-9BDB-DFF9C5F106F2" name="NMS" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-31-72-0E" com_port="2000" bootmode="0" cx="173.000000" cy="373.000000" edit_left="200" edit_top="427">
+        <dev id="557B9F5F-3F84-4671-9BDB-DFF9C5F106F2" name="NMS" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-31-72-0E" com_port="2000" bootmode="0" cx="573.000000" cy="273.000000" edit_left="600" edit_top="327">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="5478A8FF-9241-44c9-834D-6C32F700595F" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-58-7E-77" com_port="2001" bootmode="0" cx="373.000000" cy="373.000000" edit_left="400" edit_top="427">
+        <dev id="5478A8FF-9241-44c9-834D-6C32F700595F" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-58-7E-77" com_port="2001" bootmode="0" cx="273.000000" cy="273.000000" edit_left="300" edit_top="327">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -16,13 +16,18 @@
     </devices>
     <lines>
         <line srcDeviceID="557B9F5F-3F84-4671-9BDB-DFF9C5F106F2" destDeviceID="5478A8FF-9241-44c9-834D-6C32F700595F">
-            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="243.183762" srcBoundRect_Y="400.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="356.816223" tarBoundRect_Y="400.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="556.816223" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="343.183777" tarBoundRect_Y="300.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
     </lines>
     <shapes />
     <txttips>
-        <txttip left="257" top="325" right="336" bottom="342" content="SNMPµÄÅäÖÃ" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="159" top="453" right="246" bottom="470" content="20.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="326" top="454" right="413" bottom="471" content="20.1.1.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="424" top="212" right="503" bottom="229" content="SNMPµÄÅäÖÃ" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="266" top="366" right="353" bottom="383" content="20.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="541" top="368" right="628" bottom="385" content="20.1.1.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="221" top="301" right="263" bottom="318" content="Agent" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="648" top="300" right="675" bottom="317" content="NMS" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="365" top="267" right="528" bottom="284" content="&lt;- Get/Set UDP 161 -&gt;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="386" top="316" right="503" bottom="333" content="Trap UDP 162 -&gt;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="745" top="192" right="976" bottom="209" content="SNMPµÄÅäÖÃtarget host &amp; port ?" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>
