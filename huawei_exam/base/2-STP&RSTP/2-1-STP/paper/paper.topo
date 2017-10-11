@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="ADCEFC79-8806-4ef5-8C03-34A569F98451" name="Switch 1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-05-02-F9" com_port="2000" bootmode="0" cx="273.000000" cy="273.000000" edit_left="300" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="B74CC3A6-EB54-474a-81EF-B9C2249B1E06" name="Switch 2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-3F-0A-DD" com_port="2001" bootmode="0" cx="472.000000" cy="273.000000" edit_left="499" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="ADCEFC79-8806-4ef5-8C03-34A569F98451" destDeviceID="B74CC3A6-EB54-474a-81EF-B9C2249B1E06">
+            <interfacePair lineName="Copper" srcIndex="8" srcBoundRectIsMoved="0" srcBoundRect_X="343.183777" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="8" tarBoundRectIsMoved="1" tarBoundRect_X="455.816223" tarBoundRect_Y="300.000000" tarOffset_X="-1.000000" tarOffset_Y="-1.000000" />
+            <interfacePair lineName="Copper" srcIndex="9" srcBoundRectIsMoved="0" srcBoundRect_X="355.183777" srcBoundRect_Y="312.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="9" tarBoundRectIsMoved="0" tarBoundRect_X="467.816223" tarBoundRect_Y="312.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="365" top="220" right="437" bottom="237" content="STPµÄÅäÖÃ" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
+<paper>
+    <PaperID>ED8F6C8A-07BB-48ca-A9B2-0B2FEC9293C5</PaperID>
+    <PaperUses>0</PaperUses>
+    <TimeMode>0</TimeMode>
+    <LimitedTimes>0</LimitedTimes>
+    <TimeLeft>0</TimeLeft>
+    <LockPaper>0</LockPaper>
+    <AnswerAfterTimeOut>0</AnswerAfterTimeOut>
+</paper>

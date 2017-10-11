@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="E560EEDE-195A-444d-83AE-E5A5B7E5DCE4" name="Route A" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-98-79-6D" com_port="2000" bootmode="0" cx="173.000000" cy="373.000000" edit_left="200" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="9B0ED3E5-C804-4d1a-83E2-543B34868944" name="Route C" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B4-48-8F" com_port="2002" bootmode="0" cx="573.000000" cy="373.000000" edit_left="600" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="97EC6DE4-AD90-4fb0-8B39-042C61EAB8A5" name="Route B" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AB-35-66" com_port="2001" bootmode="0" cx="373.000000" cy="173.000000" edit_left="399" edit_top="244">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="E560EEDE-195A-444d-83AE-E5A5B7E5DCE4" destDeviceID="9B0ED3E5-C804-4d1a-83E2-543B34868944">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="243.183762" srcBoundRect_Y="400.000000" srcOffset_X="-16.000000" srcOffset_Y="6.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="556.816223" tarBoundRect_Y="400.000000" tarOffset_X="-31.000000" tarOffset_Y="4.000000" />
+        </line>
+        <line srcDeviceID="E560EEDE-195A-444d-83AE-E5A5B7E5DCE4" destDeviceID="97EC6DE4-AD90-4fb0-8B39-042C61EAB8A5">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="230.535538" srcBoundRect_Y="369.464478" srcOffset_X="-51.000000" srcOffset_Y="-18.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="369.464478" tarBoundRect_Y="230.535538" tarOffset_X="-42.000000" tarOffset_Y="-24.000000" />
+        </line>
+        <line srcDeviceID="97EC6DE4-AD90-4fb0-8B39-042C61EAB8A5" destDeviceID="9B0ED3E5-C804-4d1a-83E2-543B34868944">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="430.535522" srcBoundRect_Y="230.535538" srcOffset_X="4.000000" srcOffset_Y="-25.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="569.464478" tarBoundRect_Y="369.464478" tarOffset_X="9.000000" tarOffset_Y="-13.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="389" top="416" right="484" bottom="433" content="10.0.13.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="207" top="281" right="302" bottom="298" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="506" top="284" right="601" bottom="301" content="10.0.23.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="362" top="134" right="449" bottom="166" content="LOOPBACK0&#x0D;&#x0A;10.0.2.2/32" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="561" top="448" right="648" bottom="480" content="LOOPBACK0&#x0D;&#x0A;10.0.3.3/32" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="159" top="447" right="246" bottom="479" content="LOOPBACK0&#x0D;&#x0A;10.0.1.1/32" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="308" top="329" right="493" bottom="361" content="静态路由和默认路由的配置&#x0D;&#x0A;备份路由" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
