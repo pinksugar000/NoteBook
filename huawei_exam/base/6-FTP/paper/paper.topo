@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.2.00.500">
     <devices>
-        <dev id="C56963FE-22BA-4ee4-A0A3-3B47626292AA" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B6-38-2E" com_port="2000" bootmode="0" cx="273.000000" cy="273.000000" edit_left="300" edit_top="327">
+        <dev id="62898666-22C3-494a-8B2D-8C188EFECF62" name="FTP Server" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A1-1D-75" com_port="2002" bootmode="0" cx="573.000000" cy="273.000000" edit_left="600" edit_top="327">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="62898666-22C3-494a-8B2D-8C188EFECF62" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A1-1D-75" com_port="2002" bootmode="0" cx="573.000000" cy="273.000000" edit_left="600" edit_top="327">
+        <dev id="C56963FE-22BA-4ee4-A0A3-3B47626292AA" name="Client" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B6-38-2E" com_port="2000" bootmode="0" cx="273.000000" cy="273.000000" edit_left="300" edit_top="327">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -16,13 +16,13 @@
     </devices>
     <lines>
         <line srcDeviceID="C56963FE-22BA-4ee4-A0A3-3B47626292AA" destDeviceID="62898666-22C3-494a-8B2D-8C188EFECF62">
-            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="343.183777" srcBoundRect_Y="300.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="556.816223" tarBoundRect_Y="300.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="343.183777" srcBoundRect_Y="300.000000" srcOffset_X="-17.000000" srcOffset_Y="2.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="556.816223" tarBoundRect_Y="300.000000" tarOffset_X="-32.000000" tarOffset_Y="2.000000" />
         </line>
     </lines>
     <shapes />
     <txttips>
         <txttip left="418" top="211" right="490" bottom="228" content="FTPµÄÅäÖÃ" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="389" top="331" right="484" bottom="348" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="390" top="326" right="485" bottom="343" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>
 <paper>
