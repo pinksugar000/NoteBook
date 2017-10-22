@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.2.00.500">
     <devices>
-        <dev id="160693AE-6257-4a90-8FD7-0ED7F5756511" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-50-64-4C" com_port="2001" bootmode="0" cx="565.000000" cy="271.000000" edit_left="592" edit_top="325">
+        <dev id="160693AE-6257-4a90-8FD7-0ED7F5756511" name="Route B" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-50-64-4C" com_port="2001" bootmode="0" cx="565.000000" cy="270.000000" edit_left="592" edit_top="324">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -9,7 +9,7 @@
             </slot>
             <slot isMainBoard="0" id="0" type="521" />
         </dev>
-        <dev id="1D01CDC7-D844-449b-86DA-CAC0F2353417" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AD-1C-62" com_port="2000" bootmode="0" cx="282.000000" cy="272.000000" edit_left="309" edit_top="326">
+        <dev id="1D01CDC7-D844-449b-86DA-CAC0F2353417" name="Route A" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AD-1C-62" com_port="2000" bootmode="0" cx="282.000000" cy="272.000000" edit_left="309" edit_top="326">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -20,7 +20,7 @@
     </devices>
     <lines>
         <line srcDeviceID="1D01CDC7-D844-449b-86DA-CAC0F2353417" destDeviceID="160693AE-6257-4a90-8FD7-0ED7F5756511">
-            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="352.183502" srcBoundRect_Y="298.847412" srcOffset_X="-13.000000" srcOffset_Y="10.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="548.816528" tarBoundRect_Y="298.152588" tarOffset_X="-17.000000" tarOffset_Y="7.000000" />
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="352.182678" srcBoundRect_Y="298.694824" srcOffset_X="-13.000000" srcOffset_Y="5.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="548.817322" tarBoundRect_Y="297.305176" tarOffset_X="-48.000000" tarOffset_Y="8.000000" />
         </line>
     </lines>
     <shapes />
