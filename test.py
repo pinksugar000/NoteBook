@@ -337,3 +337,219 @@ def move(n,a,b,c):
 		move(n-1,b,a,c)
 move(4,'a','b','c')
 '''
+
+'''
+#切片
+color=['pink','blue','yellow','red','green']
+print('color[0:3]:',color[2:3])
+print('color[-4:-2]:',color[-4:-2])
+
+list=list(range(100))
+print('list:',list)
+print('list[::5]:',list[::5])
+print('list[:]:',list[:])
+
+tuple=tuple(range(11))
+print('tuple:',tuple)
+print('tuple[::2]:',tuple[::2])
+
+str='abcdefg'
+print('str[::2]:',str[::2])
+'''
+
+'''
+def trim(s):
+	while s[:1]==' ':
+		s=s[1:]
+	while s[-1:]==' ':
+		s=s[:-1]
+	return s
+
+# 测试:
+if trim('hello  ') != 'hello':
+    print('测试失败!')
+elif trim('  hello') != 'hello':
+    print('测试失败!')
+elif trim('  hello  ') != 'hello':
+    print('测试失败!')
+elif trim('  hello  world  ') != 'hello  world':
+    print('测试失败!')
+elif trim('') != '':
+    print('测试失败!')
+elif trim('    ') != '':
+    print('测试失败!')
+else:
+    print('测试成功!')
+'''
+
+'''
+#迭代
+d={'a':1,'b':2,'c':3}
+for key in d:
+	print('key:',key)
+for value in d.values():
+	print('value:',value)
+for k,v in d.items():
+	print('key:value-->',k,':',v)
+
+from collections import Iterable
+
+print(isinstance('abc',Iterable))
+print(isinstance([1,2,3],Iterable))
+print(isinstance((1,2,3),Iterable))
+
+for i,value in enumerate(['a','b','c']):
+	print('i:value-->',i,value)
+for x,y in [(1,1),(2,4),(3,9)]:
+	print('x,y:',x,y)
+
+def find_min_and_max(l):
+	if l == []:
+		return (None,None)
+	min=max=l[0]
+	for i in l:
+		if i<min:
+			min=i
+		elif i>max:
+			max=i
+	return (min,max)
+
+# 测试
+if find_min_and_max([]) != (None, None):
+    print('测试失败!')
+elif find_min_and_max([7]) != (7, 7):
+    print('测试失败!')
+elif find_min_and_max([7, 1]) != (1, 7):
+    print('测试失败!')
+elif find_min_and_max([7, 1, 3, 9, 5]) != (1, 9):
+    print('测试失败!')
+else:
+    print('测试成功!')
+'''
+
+'''
+#列表生成式
+list=list(range(1,11))
+print('list:',list)
+
+L=[]
+for x in range(1,11):
+	L.append(x*x)
+print('L:',L)
+
+print([x*x for x in range(1,11)])
+print([x*x for x in range(1,11) if x%2==0])
+print([m+n for m in 'abc' for n in 'xyz'])
+
+import os
+print([d for d in os.listdir('.')])
+
+L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = [x.lower() for x in L1 if isinstance(x,str)]
+
+# 测试:
+print(L2)
+if L2 == ['hello', 'world', 'apple']:
+    print('测试通过!')
+else:
+    print('测试失败!')
+'''
+
+'''
+#生成器 创建L和g的区别仅在于最外层的[]和()，L是一个list，而g是一个generator。
+g=(x*x for x in range(1,11))
+print(g)
+for n in g:
+	print(n)
+
+def fib(max):
+	n,a,b=0,0,1
+	while n<max:
+		yield b
+		a,b=b,a+b
+		n += 1
+	return 'Done'
+f=fib(6)
+print('f:',f)
+for n in f:
+	print(n)
+'''
+
+'''
+def odd():
+	print('step 1')
+	yield(1)
+	print('step 2')
+	yield(3)
+	print('step 3')
+	yield(5)
+o=odd()
+print('1:',next(o))
+print('2:',next(o))
+print('3:',next(o))
+print('4:',next(o))	
+
+def triangles():
+
+    L=[1]
+    while True:
+        yield L
+        L=[x+y for x,y in zip(L+[0],[0]+L)]
+
+# 期待输出:
+# [1]
+# [1, 1]
+# [1, 2, 1]
+# [1, 3, 3, 1]
+# [1, 4, 6, 4, 1]
+# [1, 5, 10, 10, 5, 1]
+# [1, 6, 15, 20, 15, 6, 1]
+# [1, 7, 21, 35, 35, 21, 7, 1]
+# [1, 8, 28, 56, 70, 56, 28, 8, 1]
+# [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
+n = 0
+results = []
+for t in triangles():
+    print(t)
+    results.append(t)
+    n = n + 1
+    if n == 10:
+        break
+if results == [
+    [1],
+    [1, 1],
+    [1, 2, 1],
+    [1, 3, 3, 1],
+    [1, 4, 6, 4, 1],
+    [1, 5, 10, 10, 5, 1],
+    [1, 6, 15, 20, 15, 6, 1],
+    [1, 7, 21, 35, 35, 21, 7, 1],
+    [1, 8, 28, 56, 70, 56, 28, 8, 1],
+    [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
+]:
+    print('测试通过!')
+else:
+    print('测试失败!')
+'''
+
+'''
+#迭代器
+from collections import Iterable
+print(isinstance([1,2],Iterable))
+print(isinstance({},Iterable))
+print(isinstance((),Iterable))
+print(isinstance('abc',Iterable))
+print(isinstance(100,Iterable))
+'''
+
+'''
+#高阶函数
+print(abs)
+f=abs
+print('f:',f(-12.23))
+
+
+def add(x,y,f):
+	return f(x)+f(y)
+print(add(-2,3,abs))
+'''
