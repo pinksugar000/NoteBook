@@ -6,6 +6,7 @@ RIP路由协议三个主要缺点
 2. 以跳数作为度量值，不能正确反映网络实际情况
 3. 跳数限制，使用的网络规模有限制
 
+
 ###OSPF的三张表
 1. 邻居表
 相邻路由器互相发送hello包，获取的相关信息成为邻居表
@@ -13,6 +14,13 @@ RIP路由协议三个主要缺点
 网络中所有路由器交换LSDB后，网络的整体拓扑结构（带权有向）
 3. 路由表
 根据SPF算法计算的最佳无环路由路径
+
+LSA Link State Advertisement
+LSDB Link State Database
+
+Router ID:
+Loopback地址中最大的IP地址作为Router ID
+没有配置loopback接口，选取接口地址中最大的IP地址作为Router ID
 
 网络类型
 1. 广播 （组播224.0.0.5/224.0.0.6(DR)发送hello报文、LSU、LSAck,单播发送DBD、LSR）
@@ -29,6 +37,9 @@ DR/BDR的选举（路由优先级为0的路由器不参与DR/BDR的选举）
 在广播或NBMA中选举DR/BDR的过程
 1. 接口UP后，发送Hello包同时进入waiting状态，waiting状态下会有waiting timer，与dead timer一样。默认40s,不可改变。
 2. waiting timer生效前，发送的hello报文不携带DR/BDR字段。waiting阶段内收到的hello包携带有DR/BDR,承认网络中已有的DR/BDR,不触发选举，离开waiting状态，开始邻居同步
+
+DR/BDR与邻居间建立的是邻接关系，DROther之间建立的只是邻居关系
+
 
 OSPF的接口
 Down
@@ -76,17 +87,30 @@ OSPF分区的原因：
 2. stub区域 不允许自治系统外部路由信息在区域内传播
 3. Totally stub区域  不允许区域外的路由在本地传播
 4. NSSA区域  允许通过本区域的ASBR获取的外部路由，不予许其他区域获得的外部路由传播
+5.Totally NSSA
 
-区域防环机制：所有的非骨干区域有且仅通过与骨干区域相连保持联通
-
+ 
 路由器的类型：
 1. Internal Router   路由器的所有接口都属于同一个OSPF区域
-2. ABR               路由器属于两个或以上的OSPF区域，但是其中一个区域必须是骨干区域
-3. BR                路由器至少有一个接口位于骨干区域，即所有的ABR和area0内的路由器均为BR
-4. ASBR              与其他AS交换路由信息的路由器
+2. ABR  Area Border Router         路由器属于两个或以上的OSPF区域，但是其中一个区域必须是骨干区域
+3. BR   Backbone Router             路由器至少有一个接口位于骨干区域，即所有的ABR和area0内的路由器均为BR
+4. ASBR  AS Boundary Router            与其他AS交换路由信息的路由器
 
 
 虚连接 未与骨干区域直接相连的区域通过建立虚拟连，进行OSPF报文转发，获取路由信息
 
 
 1. Router-LSA 路由器LSA
+所有路由器	区域内泛洪 区域内路由器端口链路状态
+2. Network-LSA 网络LSA
+DR DR所属的区域内泛洪 链路信息
+3. Network-summary-LSA 网络汇总LSA
+ABR  通告给其他区域 区域内的所有网段的路由信息
+4. ASBR-Summary-LSA ASBR汇总LSA
+ABR 除ASBR所在区域外的相关区域 前往ASBR的路由信息
+5. AS-external-LSA AS外部LSA
+ASBR 所有区域（除stub和NSSA）
+7. NSSA-LSA
+NSSA区域内	AS的外部路由，到达ABR时，转化成type5 LSA进行传播
+
+

@@ -553,3 +553,68 @@ def add(x,y,f):
 	return f(x)+f(y)
 print(add(-2,3,abs))
 '''
+
+'''
+def f(x):
+	return x * x
+
+r=map(f,range(1,11))
+print(list(r))
+'''
+'''
+from functools import reduce
+def fn(x,y):
+	return x*10+y
+
+print(reduce(fn,[1,3,5,6,2]))
+'''
+
+'''
+def normalize(name):
+   return name[:1].upper()+name[1:].lower()
+   #return name.capitalize()
+# 测试:
+L1 = ['adam', 'LISA', 'barT']
+L2 = list(map(normalize, L1))
+print(L2)
+'''
+
+'''
+from functools import reduce	
+def prod(L):
+	return reduce(lambda x,y:x*y,L)
+
+print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
+if prod([3, 5, 7, 9]) == 945:
+    print('测试成功!')
+else:
+    print('测试失败!')
+'''
+
+'''
+from functools import reduce
+
+number={'0':0,'1':1,'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9}
+
+def str_int(s):
+	return number[s]
+def int(s):
+	return reduce(lambda x,y:10*x+y,map(str_int,s))
+def str2float(s):
+	l=s.split('.')
+	return int(l[0])+int(l[1])/(10**len(l[1]))
+
+print('str2float(\'123.456\') =', str2float('123.456'))
+if abs(str2float('123.456') - 123.456) < 0.00001:
+    print('测试成功!')
+else:
+    print('测试失败!')
+'''
+
+'''
+def not_empty(s):
+	return s and s.strip()
+
+f=filter(not_empty, ['A', '', 'B', None, 'C', '  '])
+print(list(f))
+'''
